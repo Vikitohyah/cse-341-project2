@@ -1,0 +1,74 @@
+### Retrieve all students
+GET http://localhost:3003/students
+
+### Retrieve single student by id
+GET http://localhost:3003/students/69c44201870abcd1ab0515df
+
+### Create Student
+POST http://localhost:3003/students HTTP/1.1
+Content-type: application/json
+
+{
+  "firstName": "Michael",
+    "lastName": "Olajide",
+    "age": 20,
+    "gender": "Male",
+    "email": "michael@email.com",
+    "course": "Mass Communication",
+    "level": "200",
+    "gpa": 3.2,
+    "dateJoined": "2000-03-10"
+}
+
+### Update Student
+PUT  http://localhost:3003/students/69c44201870abcd1ab0515de
+Content-type: application/json
+
+{
+  "firstName": "Chioma",
+    "lastName": "Okeke",
+    "age": 19,
+    "gender": "Female",
+    "email": "chioma@email.com",
+    "course": "Information Technology",
+    "level": "100",
+    "gpa": 3.9,
+    "dateJoined": "2005-01-12"
+}
+
+### Delete Student
+DELETE  http://localhost:3003/students/69c5734fb6bcb819ec352b95
+
+
+
+//COURSES
+### Retrieve all courses
+GET http://localhost:3003/courses
+
+### Retrieve single course by id
+GET http://localhost:3003/courses/
+
+### Create Course 
+POST http://localhost:3003/courses HTTP/1.1
+Content-type: application/json
+
+{
+  "courseCode": "CSE301",
+    "courseName": "Anatomy and Physiology",
+    "creditUnits": 3,
+    "lecturer": "Mrs. Olanrewaju",
+    "department": "Applied Health Sciences"
+}
+### Update Course
+PUT  http://localhost:3003/courses/69c44299870abcd1ab0515e3
+Content-type: application/json
+
+{
+  "courseCode": "CSE101",
+    "courseName": "Introduction to Programming",
+    "creditUnits": 3,
+    "lecturer": "Dr. Godshand",
+    "department": "Computer Science"
+}
+### Delete Course
+DELETE  http://localhost:3003/courses/69c57489a316ede545cae069
