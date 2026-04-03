@@ -11,7 +11,7 @@ routes.use('/', swagger)
 routes.use('/students', require('./students'));
 routes.use('/courses', require('./courses'));
 
-routes.get('login', passport.authenticate('github'), (req, res) => {
+routes.get('/login', passport.authenticate('github'), (req, res) => {
     // Handle the login route
 });
 
